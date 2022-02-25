@@ -14,6 +14,7 @@
         <label asp-for="@Model.Name"></label>
         <select asp-for="AuthorId"
                 asp-items="@(new SelectList(Model.Writers,"Id","Name"))">
+            <!-- Will create drop down menu using writer Id and Name-->
             <option>Please select one</option>
         </select>
         OR

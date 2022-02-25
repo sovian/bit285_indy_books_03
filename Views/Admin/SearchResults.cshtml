@@ -46,8 +46,10 @@
             <td class="rightedge">
                 <!-- TODO: Note how the book Id is set into each "Remove" link in the list -->
                 <a asp-action="DeleteBook" asp-controller="Admin"
-                   asp-route-id="@book.Id">Remove</a> | 
+                   asp-route-id="@book.Id">Remove</a> |
                 <!-- TODO: Add an "Update action link here-->
+                <a asp-action="UpdateBook" asp-controller="Admin"
+                   asp-route-id="@book.Id">Update</a>
             </td>
         </tr>
     }
